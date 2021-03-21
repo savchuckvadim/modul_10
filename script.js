@@ -57,7 +57,7 @@ function squ (){
                                            
        const result = Math.sqrt(Math.abs(lastOperand));   
        
-        inputWindowHistory.value = `${sq} ${a}`; 
+        inputWindowHistory.value = `${a}`; 
         inputWindow.value = result;  
         }else{ 
             if (operation == null){       
@@ -65,7 +65,7 @@ function squ (){
       
         console.log(operation); 
 
-        inputWindowHistory.value = `${sq} ${inputWindow.value}`;  
+        inputWindowHistory.value = `${inputWindow.value}`;  
         const result = Math.sqrt(Math.abs(a));   
         inputWindow.value =  result; 
    
@@ -80,7 +80,7 @@ function squ (){
         
          const result = Math.sqrt(Math.abs(a)); 
           
-        inputWindowHistory.value = `${sq} ${a}`;
+        inputWindowHistory.value = `${a}`;
          
         inputWindow.value =  result;   
     }   
@@ -115,7 +115,8 @@ function Oper (o, s){
                 }
                 else{                                                                /*если знак Равно НЕ был нажат*/
                     b = s;   
-                    if(sq == "√"){                                                    /*если Корень НЕ был нажат*/
+                    if(sq == "√"){     
+                                                                     /*если Корень НЕ был нажат*/
                         inputWindowHistory.value = `${inputWindow.value} ${b}`
                     }                                                     
                      else{
